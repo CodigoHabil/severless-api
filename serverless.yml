@@ -1,4 +1,4 @@
-service: dejaredefumar
+service: dejaredefumar-api
 frameworkVersion: '3'
 
 provider:
@@ -9,4 +9,6 @@ functions:
   api:
     handler: index.handler
     events:
-      - httpApi: '*'
+      - httpApi:
+          path: /
+          method: get
