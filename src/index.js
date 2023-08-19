@@ -1,3 +1,5 @@
+const { getAllUsers } = require("./services/userService");
+
 module.exports.handler = async (event) => {
   return {
     statusCode: 200,
@@ -5,6 +7,7 @@ module.exports.handler = async (event) => {
       {
         message: "Go Serverless v3.0! Your function executed successfully!",
         input: event,
+        data: getAllUsers
       },
       null,
       2

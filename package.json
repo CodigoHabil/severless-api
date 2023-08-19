@@ -1,5 +1,5 @@
 {
-  "devDependencies": {
+  "dependencies": {
     "aws-sdk": "^2.12.0"
   }
 }
