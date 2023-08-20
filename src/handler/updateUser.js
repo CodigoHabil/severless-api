@@ -1,7 +1,7 @@
-const { createUser } = require('../services/userService');
+const { updateUser } = require('../services/userService');
 
 module.exports.handler = async (event) => {
-    const response = await createUser(event);
+    const response = await updateUser(event);
     return {
         statusCode: 200,
         body: JSON.stringify(

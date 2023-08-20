@@ -35,6 +35,12 @@ functions:
       - httpApi:
           path: /users
           method: post
+  update:
+    handler: src/handler/updateUser.handler
+    events:
+      - httpApi:
+          path: /users/{id}
+          method: put
 resources:
   Resources:
     UserTable:
