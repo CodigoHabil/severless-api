@@ -6,7 +6,7 @@ module.exports.handler = async (event) => {
       body: JSON.stringify(
         {
           message: "Ok!",
-          data: getAllUsers(),
+          data: await getAllUsers(),
         },
         null,
         2
